@@ -8,23 +8,25 @@ public class Main {
         int[] numbers = {3, 5, 1, 8, 2};
         System.out.println("Task 1 -> Finding the difference between the largest and smallest values in the array.");
 
-        // Call the method and print the result
         try {
+            // Call the method and print the result
             int difference = MathOperations.findDifference(numbers);
             System.out.println("    - The difference between the largest and smallest values is: " + difference);
         } catch (IllegalArgumentException error) {
             System.err.println("    - Error: "  + error.getMessage());
         }
+
         /*Write a Java method that finds the smallest and second smallest elements of a given array and prints them to the console.
         Task 2*/
         // Create an instance of Utils to access the method
         Utils utilities = new Utils();
         // Define an array of integers
         int[] array = {7, 2, 5, 1, 3};
-        // Call the method to find and print the two smallest numbers
+
         try{
             System.out.println("Task 2 -> Finding the two smallest numbers in the array.");
             // Call the method to find and print the two smallest numbers
+            // The method prints the results directly
             utilities.findTwoSmallestNumbers(array);
         } catch (IllegalArgumentException error) {
             System.err.println("    - Error: " + error.getMessage());
